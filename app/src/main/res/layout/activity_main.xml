@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binary"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter value "
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/binaryToOctal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/white"
+        android:text="Binary to Octal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/binaryToDecimal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Binary To Decimal"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/binaryToOctal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/binaryToOctal"
+        app:layout_constraintTop_toBottomOf="@+id/binaryToOctal" />
+
+    <Button
+        android:id="@+id/binaryToHexa"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Binary to Hexa"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/binaryToDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/binaryToDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/binaryToDecimal" />
+
+    <Button
+        android:id="@+id/octalToBinary"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Octal to Binary"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/binaryToHexa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/binaryToHexa"
+        app:layout_constraintTop_toBottomOf="@+id/binaryToHexa" />
+
+    <Button
+        android:id="@+id/octalToDecimal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Octal to Decimal"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/octalToBinary"
+        app:layout_constraintTop_toBottomOf="@+id/octalToBinary" />
+
+    <Button
+        android:id="@+id/octalToHexa"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Octal to Hexa"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/octalToDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/octalToDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/octalToDecimal" />
+
+    <Button
+        android:id="@+id/decimalToBinary"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:text="Decimal to Binary"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toEndOf="@+id/binaryToOctal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/decimalToOctal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Decimal to Octal"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/decimalToBinary"
+        app:layout_constraintStart_toStartOf="@+id/decimalToBinary"
+        app:layout_constraintTop_toBottomOf="@+id/decimalToBinary" />
+
+    <Button
+        android:id="@+id/decimalToHexa"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Decimal to Hexa"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/decimalToOctal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/decimalToOctal"
+        app:layout_constraintTop_toBottomOf="@+id/decimalToOctal" />
+
+    <Button
+        android:id="@+id/hexaToBinary"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Hexa to Binary"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/decimalToHexa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/decimalToHexa"
+        app:layout_constraintTop_toBottomOf="@+id/decimalToHexa" />
+
+    <Button
+        android:id="@+id/hexaToOctal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="Hexa to Octal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/hexaToBinary"
+        app:layout_constraintTop_toBottomOf="@+id/hexaToBinary" />
+
+    <Button
+        android:id="@+id/hexaToDecimal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Hexa to Decimal"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/hexaToOctal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hexaToOctal"
+        app:layout_constraintTop_toBottomOf="@+id/hexaToOctal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
