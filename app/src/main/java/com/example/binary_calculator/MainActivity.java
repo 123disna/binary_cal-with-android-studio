@@ -2,6 +2,7 @@ package com.example.binary_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
